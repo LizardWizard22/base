@@ -3,7 +3,6 @@
 // IMPORTS
 // ============================================================================
 const express = require('express');
-const spdy = require('spdy');
 const pjson = require('./package.json');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
@@ -55,13 +54,12 @@ const db = mysql.createPool({
 // ROUTES
 // ============================================================================
 app.get('/', (req, res) => {
-	res.render('front', { 'title': 'Hello, World!', 'content': `It's nice to meet you :-)` });
+	res.render('page', { 'title': 'Hello, World!', });
 });
 
 // SERVER INIT
 // ============================================================================
-spdy.createServer(options, app).listen(port, () => {
-	debug(
-		`${pjson.name} v${pjson.version} is running on https://${process.env.SITE_HOST}:${port}`
-	);
+app.listen(port, () => {
+	console.log('Site Started');
+
 });

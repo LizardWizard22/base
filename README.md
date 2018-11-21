@@ -11,7 +11,7 @@ to start it. the changes made while running this will not show on the running we
 This is the first version of my codebase for websites and other web related projects
 
 ## NPM Packages
-```Json
+```json
   "dependencies": {
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",

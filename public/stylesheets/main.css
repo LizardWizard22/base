@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Noto Serif';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/NotoSerif-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Noto Serif';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/NotoSerif-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Noto Serif';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/NotoSerif-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Noto Serif';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/NotoSerif-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+:root {
+	--fontSize: calc(1em + (21 - 16) * (100vw - 412px) / (1920 - 412));
+	--fontFacePrimary: 'Noto Serif';
+	--fontFaceSecondary: 'Raleway';
+
+	--colorPrimaryForeground: hsl(0, 0%, 7%);
+	--colorPrimaryBackground: hsl(0, 0%, 97%);
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/*---Menu---*/
+#side{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.715);
+}
+#side  ul, li, a {
+color:rgba(230,230,230,0.9);
+list-style: none;
+text-decoration: none;
+padding: 15px 10px;
+
+}
+#side a:hover{
+	color: red;
+}
+#side li {
+	border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+#side img{
+ height: 100px;
+ width: 100px;
+ padding: 2em;
+}

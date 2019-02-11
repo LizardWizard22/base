@@ -60,6 +60,5 @@ app.get('/', (req, res) => {
 // SERVER INIT
 // ============================================================================
 app.listen(port, () => {
-	console.log('Site Started');
-
+	console.log(`is running on http://${process.env.SITE_HOST}:${port}`);;
 });

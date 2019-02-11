@@ -4,6 +4,11 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
     "nodemon": "^1.18.10",
     "run-script-os": "^1.0.5"
   },

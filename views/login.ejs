@@ -1,0 +1,30 @@
+<% include partials/head %>
+<% include partials/menu%>
+<main>
+<div id="title">
+<h1>
+		<%= title %>
+	</h1>
+</div>
+<div class="login">´
+		
+<form action="/auth/login" method="POST">
+	<% if (typeof status != 'undefined') { %>
+	<span class="errorMessage">
+		<%= status %></span>
+	<% } %>
+	<div class="loginGroup">
+		<label for="username">Brugernavn</label>
+		<input type="text" name="username" id="username">
+	</div>
+	<div class="loginGroup">
+		<label for="password">Adgangskode</label>
+		<input type="password" name="password" id="password">
+	</div>
+	<button class="loginB" type="submit">Log ind</button>
+	<button class="signupB" href="/signup_user">Sign up!</button>
+</form>
+</div>
+</main>
+<% include partials/footer %>
+<% include partials/after-footer %>

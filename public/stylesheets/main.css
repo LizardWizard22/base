@@ -54,27 +54,48 @@ body{
 
 
 /*---Menu---*/
-#side{
-	position: fixed;
-	width: 200px;
-	height: 100%;
-	background:rgba(0, 0, 0, 0.715);
-}
-#side  ul, li, a {
-color:rgba(230,230,230,0.9);
-list-style: none;
-text-decoration: none;
-padding: 15px 10px;
 
+#side {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.715);
+  }
+  
+  #side ul,
+  #side li,
+  #side a {
+    color: rgba(230, 230, 230, 0.9);
+    list-style: none;
+    text-decoration: none;
+    padding: 15px 10px;
+  
+  }
+  
+  #side a:hover {
+    color: red;
+  }
+  
+  #side li {
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  }
+  
+  #side img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 2em;
+  }
+/* --- Main Page --- */
+main{
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+	align-items: center;
+	justify-content: center;
 }
-#side a:hover{
-	color: red;
-}
-#side li {
-	border-bottom: 1px solid rgba(100,100,100,0.3);
-}
-#side img{
- height: 100px;
- width: 100px;
- padding: 2em;
+main img{
+    border: solid black;
+    height: 16em;
+    width: 360px;
 }

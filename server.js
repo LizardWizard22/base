@@ -18,5 +18,6 @@ app.listen(port, error => {
         debug(error);
         return;
     }
-    debug(`${pjson.name} v${pjson.version} is running on http://${process.env.SITE_HOST}:${port}`);
+    debug("it failed")
+    console.log(`${pjson.name} v${pjson.version} is running on http://${process.env.SITE_HOST}:${port}`);
 });

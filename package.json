@@ -1,23 +1,21 @@
 {
-  "name": "base",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "dependencies": {
-    "bcrypt": "^3.0.4",
-    "debug": "^4.1.1",
-    "dotenv": "^6.2.0",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "debug": "^3.2.7",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-flash": "^0.0.2",
     "express-formidable": "^1.2.0",
-    "express-log-errors": "^2.0.2",
-    "express-session": "^1.15.6",
-    "morgan": "^1.9.1",
-    "mysql": "^2.16.0",
-    "nodemon": "^1.18.10",
-    "run-script-os": "^1.0.5"
+    "express-log-errors": "^2.1.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "run-script-os": "^1.1.6"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node -r dotenv/config server.js dotenv_config_path=./.env",
     "dev": "run-script-os",
@@ -25,16 +23,5 @@
     "dev:linux": "DEBUG=kodebase nodemon -r dotenv/config server.js dotenv_config_path=./.env",
     "dev:darwin": "DEBUG=kodebase nodemon -r dotenv/config server.js dotenv_config_path=./.env",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LizardWizard22/base.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LizardWizard22/base/issues"
-  },
-  "homepage": "https://github.com/LizardWizard22/base#readme"
+  }
 }

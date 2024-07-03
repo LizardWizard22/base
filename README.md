@@ -1,5 +1,5 @@
 # base
-
+THIS PROJECT IS NO LONGER BEING MAINTAINED
 ## Start Commands 
 `NPM run dev` 
 to start development phase of website. you can edit it while its on.
